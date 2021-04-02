@@ -27,7 +27,7 @@ namespace FunWithStrings
 
             string reversed = new string(input.Reverse().ToArray());
             Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine(reversed);
+            Console.WriteLine("Reversed Sentence: " + reversed);
             Console.ResetColor();
 
             for (int i = 0; i < input.Length; i++)
