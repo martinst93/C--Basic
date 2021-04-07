@@ -3,9 +3,9 @@ using System;
 
 namespace ATM
 {
-    internal class EntryPoint
+     class EntryPoint
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Customers[] customer = new Customers[4]
              {
@@ -31,7 +31,7 @@ namespace ATM
             Console.ReadLine();
         }
 
-        private static void Validation(Customers[] customer, string cardNumberInput, int pinConverted, int convertedOperation)
+        public static void Validation(Customers[] customer, string cardNumberInput, int pinConverted, int convertedOperation)
         {
             foreach (var item in customer)
             {
@@ -61,7 +61,7 @@ namespace ATM
             }
         }
 
-        private static void BalanceChecking(Customers[] customer, string creditCard)
+        public static void BalanceChecking(Customers[] customer, string creditCard)
         {
             for (var i = 0; i < customer.Length; i++)
             {
@@ -70,7 +70,7 @@ namespace ATM
             }
         }
 
-        private static void CashWithdrawal(Customers[] customer, string cardNumberInput)
+        public static void CashWithdrawal(Customers[] customer, string cardNumberInput)
         {
             Console.WriteLine("Enter the amount of money you wish to withdraw");
             string withdrawAmountInput = Console.ReadLine();
@@ -96,7 +96,7 @@ namespace ATM
             }
         }
 
-        private static void CashDeposition(Customers[] customer, string cardNumberInput)
+        public static void CashDeposition(Customers[] customer, string cardNumberInput)
         {
             Console.WriteLine("Enter the amount of money you wish to deposit");
             string depositInput = Console.ReadLine();
